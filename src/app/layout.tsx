@@ -1,4 +1,3 @@
-import { ChakraProvider } from "@chakra-ui/react";
 import "../styles/sass/styles.scss";
 
 export default function RootLayout({
@@ -8,11 +7,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ChakraProvider>
         <body>
           {children}
         </body>
-      </ChakraProvider>
     </html>
   );
 }
