@@ -1,4 +1,4 @@
-type OrderCardProps = {
+type YourOrderCardProps = {
     userId: string,
     listProduct: string[],
     totalPrice: number,
@@ -6,7 +6,7 @@ type OrderCardProps = {
     date: string,
 }
 
-const OrderCard = (props: OrderCardProps) => {
+const YourOrderCard = (props: YourOrderCardProps) => {
     return (
         <section className="w-1/5 m-4 px-8 py-4 border rounded-xl">
             <section className="flex flex-col mt-4">
@@ -16,8 +16,9 @@ const OrderCard = (props: OrderCardProps) => {
                 <span className="font-semibold tracking-tighter">Status: {props.status}</span>
                 <span className="font-semibold tracking-tighter">date: {props.date}</span>
             </section>
+            <button className="c-button mt-4 py-2 px-4 font-semibold">Cancelar orden</button>
         </section>
     );
 };
 
-export default OrderCard;
+export default YourOrderCard;

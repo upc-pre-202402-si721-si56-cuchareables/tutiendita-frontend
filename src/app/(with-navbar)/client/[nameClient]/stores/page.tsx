@@ -1,11 +1,11 @@
-import CardStore from "@/components/CardStore";
+import StoreCard from "@/components/StoreCard";
 
 const StorePage = () => {
     return (
         <>
             <h1>Lista de otras tiendas:</h1>
             <section className="flex justify-between">
-                <CardStore
+                <StoreCard
                     name="Apple electronics"
                     description="Tienda de productos tecnológicos apple en Lima, Perú."
                     category="Technology"
