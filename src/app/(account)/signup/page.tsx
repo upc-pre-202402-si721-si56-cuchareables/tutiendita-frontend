@@ -6,7 +6,7 @@ const Login = () => {
     return (
         <section className="flex items-center w-1/4 h-screen m-auto px-16">
             <section className="w-full">
-                <BackButton />
+                <BackButton route="/login" />
                 <h1 className="mt-8 text-4xl text-center font-extrabold tracking-tighter">CREAR CUENTA</h1>
                 <section className="flex flex-col mx-auto my-4">
                     <input type="text" placeholder="Ingresar nombre de usuario" className="c-input__input" />
